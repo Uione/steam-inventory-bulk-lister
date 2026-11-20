@@ -1,0 +1,11 @@
+{
+  "name": "steam-inventory-bulk-lister",
+  "version": "1.2.0",
+  "description": "Tampermonkey/Violentmonkey userscript to multi-select Steam inventory items and bulk-uplist them to the Steam Community Market.",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "lint": "node --check steam-inventory-bulk-lister.user.js",
+    "test": "node --check steam-inventory-bulk-lister.user.js && node test/run.mjs"
+  }
+}
