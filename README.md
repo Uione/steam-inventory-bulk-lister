@@ -47,8 +47,9 @@ Install **[Tampermonkey](https://www.tampermonkey.net/)** or **[Violentmonkey](h
 > **Important for Chrome / Edge users:** Open `chrome://extensions` (or `edge://extensions`), click **Details** on Tampermonkey/Violentmonkey, and toggle **Allow user scripts** ON so the browser allows userscripts to run on Steam.
 
 #### 2. Install the Script
+- **Install from Greasy Fork (Recommended):** Open **[Steam Inventory Bulk Uplist on Greasy Fork](https://greasyfork.org/scripts/606424-steam-inventory-bulk-uplist)** and click **Install this script**.
 - **Direct Raw Install from GitHub:** Open [`steam-inventory-bulk-lister.user.js`](https://raw.githubusercontent.com/Uione/steam-inventory-bulk-lister/main/steam-inventory-bulk-lister.user.js) and click **Install** when Tampermonkey/Violentmonkey prompts you.
-- **Manual Install:** Copy [`steam-inventory-bulk-lister.user.js`](steam-inventory-bulk-lister.user.js) into a new script in your userscript manager and save.
+- **Manual Install:** Copy [`steam-inventory-bulk-lister.user.js`](https://github.com/Uione/steam-inventory-bulk-lister/blob/main/steam-inventory-bulk-lister.user.js) into a new script in your userscript manager and save.
 
 ### Usage
 
@@ -70,7 +71,7 @@ npm test
 
 - **Steam Mobile Guard:** Valve requires mobile authenticator confirmation for market listings; browser scripts cannot bypass 2FA confirmations.
 - **Rate Limits:** Steam enforces strict IP rate limits on `/market/` endpoints. The default `1250ms` delay + jitter and automatic `429` backoff help avoid temporary cooldowns.
-- **License:** Released under the [MIT License](LICENSE). Not affiliated with or endorsed by Valve Corporation or Steam. Test with 1–2 low-value items first.
+- **License:** Released under the [MIT License](https://github.com/Uione/steam-inventory-bulk-lister/blob/main/LICENSE). Not affiliated with or endorsed by Valve Corporation or Steam. Test with 1–2 low-value items first.
 
 ---
 
@@ -117,8 +118,9 @@ npm test
 > **Chrome / Edge 重要提示：** 请前往 `chrome://extensions`（或 `edge://extensions`），打开 Tampermonkey / Violentmonkey 的 **详情**，将 **允许运行用户脚本（Allow user scripts）** 打开，否则浏览器会阻止脚本在 Steam 页面生效。
 
 #### 2. 安装本脚本
+- **从 Greasy Fork 安装（推荐）：** 打开 **[Steam Inventory Bulk Uplist - Greasy Fork](https://greasyfork.org/scripts/606424-steam-inventory-bulk-uplist)** 点击 **安装此脚本**。
 - **从 GitHub 一键安装：** 直接打开 [`steam-inventory-bulk-lister.user.js`](https://raw.githubusercontent.com/Uione/steam-inventory-bulk-lister/main/steam-inventory-bulk-lister.user.js)，在弹出的脚本管理器界面点击 **安装**。
-- **手动安装：** 复制 [`steam-inventory-bulk-lister.user.js`](steam-inventory-bulk-lister.user.js) 全部内容，在脚本管理器中新建脚本粘贴并保存即可。
+- **手动安装：** 复制 [`steam-inventory-bulk-lister.user.js`](https://github.com/Uione/steam-inventory-bulk-lister/blob/main/steam-inventory-bulk-lister.user.js) 全部内容，在脚本管理器中新建脚本粘贴并保存即可。
 
 ### 使用步骤
 
@@ -140,4 +142,4 @@ npm test
 
 - **手机令牌确认：** Valve 强制要求市场挂单通过手机 Steam 令牌确认，浏览器脚本无法绕过 2FA。
 - **频率限制：** Steam 对 `/market/` 接口有严格的 IP 速率限制，请勿将请求间隔调得过低，以免触发临时 `429` 冷却。
-- **开源协议：** 本项目基于 [MIT License](LICENSE) 开源，与 Valve / Steam 无任何隶属或合作关系。建议首次使用先用 1～2 件低价物品测试。
+- **开源协议：** 本项目基于 [MIT License](https://github.com/Uione/steam-inventory-bulk-lister/blob/main/LICENSE) 开源，与 Valve / Steam 无任何隶属或合作关系。建议首次使用先用 1～2 件低价物品测试。
